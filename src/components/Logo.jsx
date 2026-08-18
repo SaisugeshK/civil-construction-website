@@ -9,8 +9,10 @@ export default function Logo({ variant = "dark", className = "h-10 w-10" }) {
         stroke={mark}
         strokeWidth="4"
       />
-      <path fill={mark} d="M30 62 50 30l20 32h-11L50 47 40.5 62z" />
-      <rect x="30" y="66" width="40" height="6" fill={mark} />
+      <path
+        fill={mark}
+        d="M28 40 50 27l22 13v8L50 35 28 48zM28 52 50 65 72 52v8L50 73 28 60zM28 44h44v12H28z"
+      />
     </svg>
   );
 }
@@ -24,10 +26,10 @@ export function Wordmark({ variant = "dark", className = "" }) {
       <Logo variant={variant} className="h-9 w-9 shrink-0" />
       <div className="leading-none">
         <div className={`font-display text-xl tracking-wide ${textColor}`}>
-          MERIDIAN
+          SIVRA
         </div>
         <div className={`text-[0.6rem] tracking-[0.35em] font-medium ${subColor}`}>
-          CONSTRUCTION
+          CONSTRUCTIONS
         </div>
       </div>
     </div>

@@ -1,9 +1,7 @@
-# Meridian Construction Co. — Website
+# Sivra Constructions — Website
 
-Marketing website template for a construction & interiors company. All
-brand details (company name, contact info, address) are placeholders —
-swap them for your real business details in `src/data/site.js` before
-going live.
+Marketing website for **Sivra Constructions**, a civil construction and
+interiors company.
 
 Built with React 19, Vite, Tailwind CSS v4, and Framer Motion.
 
@@ -33,7 +31,4 @@ npm run lint      # run oxlint
 
 Brand details (company name, contact info, services, testimonials, project
 list) live in `src/data/site.js` — edit that file to update copy without
-touching components. The current phone, email and address are placeholders
-(`+91 90000 00000`, `info@example.com`, `123 Business Avenue...`) — replace
-them with real details when you're ready to publish. Stock photography
-lives in `public/images/`.
+touching components. Stock photography lives in `public/images/`.

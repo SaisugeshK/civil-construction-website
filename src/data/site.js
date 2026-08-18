@@ -1,13 +1,13 @@
 export const brand = {
-  name: "Meridian Construction Co.",
-  short: "Meridian",
+  name: "Sivra Constructions",
+  short: "Sivra",
   tagline: "Building Tomorrow, Today.",
   founderTitle: "Founder & Managing Director",
   founderBlurb: "a licensed civil engineer with over a decade of hands-on site experience",
-  phone: "+91 90000 00000",
-  phoneHref: "tel:+919000000000",
-  email: "info@example.com",
-  address: "123 Business Avenue, Your City, State 000000",
+  phone: "+91 84899 83007",
+  phoneHref: "tel:+918489983007",
+  email: "sivraconstructions@gmail.com",
+  address: "2102/4 Public Office Road, Velipalayam, Nagapattinam 611001, Tamil Nadu",
   website: "www.yourcompany.com",
 };
 
