@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { projects } from "../data/site";
+import { asset } from "../lib/asset";
 
 const filters = ["All", "Residential Construction", "Premium Villa", "Architectural Design", "Interiors"];
 
@@ -53,7 +54,7 @@ export default function Projects() {
                 className="group relative aspect-[4/5] overflow-hidden rounded-2xl"
               >
                 <img
-                  src={project.image}
+                  src={asset(project.image)}
                   alt={project.title}
                   className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />

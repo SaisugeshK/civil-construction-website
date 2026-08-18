@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { HiArrowUpRight } from "react-icons/hi2";
 import { services } from "../data/site";
+import { asset } from "../lib/asset";
 
 export default function Services() {
   return (
@@ -33,7 +34,7 @@ export default function Services() {
             >
               <div className="relative h-56 overflow-hidden">
                 <img
-                  src={service.image}
+                  src={asset(service.image)}
                   alt={service.title}
                   className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />

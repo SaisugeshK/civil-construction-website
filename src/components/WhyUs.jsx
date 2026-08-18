@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { HiCheckCircle } from "react-icons/hi";
 import { whyUs } from "../data/site";
+import { asset } from "../lib/asset";
 
 export default function WhyUs() {
   return (
@@ -43,24 +44,24 @@ export default function WhyUs() {
         >
           <div className="space-y-4">
             <img
-              src="/images/building-glass.jpg"
+              src={asset("/images/building-glass.jpg")}
               alt="Modern building facade"
               className="h-64 w-full rounded-2xl object-cover"
             />
             <img
-              src="/images/team-meeting.jpg"
+              src={asset("/images/team-meeting.jpg")}
               alt="Project planning session"
               className="h-40 w-full rounded-2xl object-cover"
             />
           </div>
           <div className="mt-10 space-y-4">
             <img
-              src="/images/worker2.jpg"
+              src={asset("/images/worker2.jpg")}
               alt="Site engineer inspecting work"
               className="h-40 w-full rounded-2xl object-cover"
             />
             <img
-              src="/images/hero-modern-house.jpg"
+              src={asset("/images/hero-modern-house.jpg")}
               alt="Completed modern residence"
               className="h-64 w-full rounded-2xl object-cover"
             />

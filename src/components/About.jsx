@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { HiOutlineOfficeBuilding } from "react-icons/hi";
 import { brand } from "../data/site";
+import { asset } from "../lib/asset";
 
 export default function About() {
   return (
@@ -15,7 +16,7 @@ export default function About() {
         >
           <div className="relative aspect-[4/5] overflow-hidden rounded-3xl">
             <img
-              src="/images/worker.jpg"
+              src={asset("/images/worker.jpg")}
               alt="Site engineer"
               className="h-full w-full object-cover"
             />

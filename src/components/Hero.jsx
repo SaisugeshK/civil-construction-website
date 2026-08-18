@@ -1,13 +1,14 @@
 import { motion } from "framer-motion";
 import { HiArrowRight, HiOutlineBadgeCheck } from "react-icons/hi";
 import { brand } from "../data/site";
+import { asset } from "../lib/asset";
 
 export default function Hero() {
   return (
     <section id="home" className="relative flex min-h-screen items-center overflow-hidden bg-ink-950">
       <div className="absolute inset-0">
         <img
-          src="/images/hero-construction.jpg"
+          src={asset("/images/hero-construction.jpg")}
           alt="Construction site"
           className="h-full w-full object-cover opacity-45"
         />
