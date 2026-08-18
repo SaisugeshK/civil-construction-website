@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Cormorant Garamond", "Georgia", serif;
+  --font-body: "Poppins", ui-sans-serif, system-ui, sans-serif;
+
+  --color-brand-50: #eaf8f1;
+  --color-brand-100: #cdeedd;
+  --color-brand-200: #9edcbc;
+  --color-brand-300: #67c495;
+  --color-brand-400: #3cae78;
+  --color-brand-500: #2a9a63;
+  --color-brand-600: #1f7d4f;
+  --color-brand-700: #1b6442;
+  --color-brand-800: #194f38;
+  --color-brand-900: #16412f;
+  --color-brand-950: #08251a;
+
+  --color-ink-50: #f5f6f5;
+  --color-ink-100: #e6e8e6;
+  --color-ink-400: #6b746e;
+  --color-ink-600: #3b433d;
+  --color-ink-800: #1b211d;
+  --color-ink-900: #10140f;
+  --color-ink-950: #0a0d0a;
+
+  --color-sand-50: #faf9f5;
+  --color-sand-100: #f4f1e9;
+
+  --animate-marquee: marquee 32s linear infinite;
+
+  @keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-sand-50);
+  color: var(--color-ink-900);
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+::selection {
+  background: var(--color-brand-400);
+  color: white;
+}
+
+.text-outline {
+  -webkit-text-stroke: 1.5px var(--color-brand-300);
+  color: transparent;
+}
+
+@utility container-page {
+  max-width: 80rem;
+  margin-inline: auto;
+  padding-inline: 1.25rem;
+  @media (min-width: 640px) {
+    padding-inline: 2rem;
+  }
+  @media (min-width: 1024px) {
+    padding-inline: 3rem;
+  }
+}
